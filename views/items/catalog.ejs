@@ -1,0 +1,37 @@
+<%- layout('layouts/Boilerplate') %> 
+<link rel="stylesheet" href="/stylesheets/medicine.css">  
+
+<% if(foundItem) {%> 
+<div class="container">
+  <div class="row">
+    <% for(let item of foundItem){ %>
+    <div class="col">
+      <div class="card" style="width: 14rem;">
+          <img src="https://img.freepik.com/free-vector/headache-concept-illustration_114360-6846.jpg?t=st=1650679619~exp=1650680219~hmac=e05cfa57ae68ac5c75a6fbdce25fe98dc4b2e1e2240104085128774c09038055&w=740" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+           
+            
+      
+            
+                      <h5 class="card-title "><%=item.owner.username%></h5>
+                      <h6 class="card-title ">contact : <%=item.owner.mobile_num%></h6>
+                   
+                
+               
+          </div>
+        </div>
+    </div>
+    <% } %> 
+  </div>
+  </div>
+  <% }%> 
+  
+       
+            
+
+        
+  
+      
+
+

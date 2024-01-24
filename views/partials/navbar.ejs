@@ -1,0 +1,35 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ShareBit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-2" id="navbarNav">
+            <div class="navbar-nav">
+                
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                
+                
+                    <a class="nav-link" href="/items/electronic">Electronic Gadgets</a>
+               
+                
+             <!--   <a class="nav-link" href="/items/studyMaterial">Study Material</a> -->
+                    <a class="nav-link" href="/items/medicine">Medicine</a>
+                    <a class="nav-link" href="/items/generalStuff">General Stuff</a>
+                    <a class="nav-link" href="/items/new">Add Item</a> 
+                
+                
+              
+            </div>
+            <div class="navbar-nav" style="margin-left: auto!important; margin-right:3px">
+                <% if(!currentUser){ %> 
+                <a href="/login" class="nav-link">Login</a>
+                <a href="/register" class="nav-link">Register</a>
+                <% }else{ %> 
+                <a href="/logout" class="nav-link">Logout</a>
+                <% } %> 
+            </div>
+        </div>
+    </div>
+  </nav>

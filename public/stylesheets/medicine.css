@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    /* url("https://images.unsplash.com/photo-1605973030374-949fb3feff7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"); */
+    /* url("https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?t=st=1650228498~exp=1650229098~hmac=4dcbd1cf7645ce396c60b5471e944d1a52f728c5376153822cff7eeabfb3c428&w=1060"); */
+    url("https://t3.ftcdn.net/jpg/03/79/57/92/240_F_379579202_Zd1PRVRMBtz7hhq5TBWjeOkArjHRxZOM.jpg");
+    /* url("https://images.unsplash.com/photo-1636955735635-b4c0fd54f360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+    /* url("https://as2.ftcdn.net/v2/jpg/00/81/65/69/1000_F_81656921_TOIo0CpBbeTvshggLhTOrLz8EDtMVmNo.jpg"); */
+    
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    /* text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+.col{
+    margin-bottom: 3rem;
+}
+
+.carousel-item {
+width : auto;
+margin-bottom: 6rem;
+margin-left : 2rem;
+margin-right : 2rem;
+height : 8rem;
+}

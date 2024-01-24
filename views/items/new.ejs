@@ -1,0 +1,42 @@
+<%-layout('layouts/Boilerplate') %> 
+<link rel="stylesheet" href="/stylesheets/medicine.css">
+<h2>New Item</h2>
+<form action="/items" method="POST" class="validated-form" novalidate>
+    
+  <div class="mb-3">
+    <form action="/items"  method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+   <div>
+     <label class="form-label text-light" for="item_name">Item name</label>
+    <input class="form-control " type="text" id="item_name" name="item[item_name]" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  
+  <div class="mb-3 pt-2">
+      <label class=" form-label text-light" for="category">category</label>
+      <input class="form-control " type="text"  id="category" name="item[category]" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      </div>
+
+      <!-- <div class="mb-3">
+        <label class=" form-label" for="image">Image Url</label>
+        <input class="form-control" type="file"  id="image" name="item[image]" multiple>
+        <div class="valid-feedback">
+         Looks good!
+       </div>
+       </div> -->
+
+
+   <button class="btn btn-success mt-3">Add Items</button>
+</form>
+              
+
+
+            
+  
+
+ 
+

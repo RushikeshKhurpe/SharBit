@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareBit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+</head>
+
+
+
+
+
+<body class="d-flex text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-left mb-0">ShareBit</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                  
+                    <% if(!currentUser) { %>
+                      
+                      <a class="nav-link" href="/login">Sign In</a>
+                      
+                      <a class="nav-link" href="/register">Register</a>
+                    <% } else { %>
+                      <a class="nav-link" href="/items/new">Add Item</a>
+                    <a class="nav-link" href="/logout">Logout</a>
+                    <% } %>
+                </nav>
+            </div>
+        </header>
+
+       
+
+       
+        <main class="px-3" style="padding-top:12rem;  padding-bottom: 20rem;;" >
+            <h1>ShareBit</h1>
+            <p class="lead"> Welcome to ShareBit! <br> Platform to share your belongings with your colleagues.</p>
+            <a href="#all_cards" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white" onClick="all_cards"; >EXPLORE</a>
+        </main>
+ 
+
+        <div id="all_cards">
+
+        
+        <div class="top_cards" style="display:flex; margin-right: 2px;flex-direction: row; padding:100px 10px;; justify-content: space-between; color: black;;">
+          <div class="card" style="width: 18rem;" style=" height: 20rem;"  >
+            <img src="https://img.freepik.com/free-vector/antigravity-technology-with-elements_23-2148085873.jpg?size=338&ext=jpg&uid=R34051963" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style = "text-shadow: none;">Electronic Items</h5>
+              <p class="card-text" style = "text-shadow: none;">Electric Kettle, Iron, Hair Dryer, etc.</p>
+              <a href="items/electronic" class="btn btn-primary">Go</a>
+            </div>
+          </div>   
+
+          <div class="card" style="width: 18rem;" style=" height: 20rem;"  >
+            <img src="https://img.freepik.com/free-vector/focused-people-studying-online-school_74855-5834.jpg?t=st=1650232376~exp=1650232976~hmac=d65231b84d64ab5c1d76719b5bf704e331291a86280159febb1efa6c34088e39&w=996" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text" style="padding-bottom: 70px;"></div>
+              <h5 class="card-title"style = "text-shadow: none;">Study Material</h5>
+              <p class="card-text" style = "text-shadow: none;">Subject Wise Notes, Previous Year Question Papers, etc.</p>
+              <a href="items/study" class="btn btn-primary">Go</a>
+            </div>
+          </div>   
+
+        </div>
+
+        <div class="bottom_cards" style="display:flex; margin-right: 2px;flex-direction: row; padding:10px;; justify-content: space-between; color:black;">
+            <div class="card" style="width: 18rem;" style=" height: 20rem;"  >
+              <img src="https://img.freepik.com/free-vector/isometric-gastroenterology-composition-with-view-medication-with-tubes-pills-illustration_1284-63536.jpg?size=338&ext=jpg&uid=R34051963" class="card-img-top" alt="...">
+              <div class="card-body">
+               
+                <h5 class="card-title"style = "text-shadow: none;">Medicine</h5>
+                <p class="card-text"style = "text-shadow: none;" >Medicine for Cold, Cough, Acidity, etc.</p>
+                <a href="items/medicine" class="btn btn-primary">Go</a>
+              </div>
+            </div>   
+  
+            <div class="card" style="width: 18rem;" style=" height: 20rem;"  >
+              <img src="https://img.freepik.com/free-vector/box-full-sport-equipments_1308-37207.jpg?t=st=1650277823~exp=1650278423~hmac=45eb1b9d875bc7bd1b788be3dc45220748b705e71ba4512c67a350f68e1e0bd9&w=900" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="text" style="padding-bottom: 70px;"></div>
+                <h5 class="card-title" style = "text-shadow: none;">General Stuff</h5>
+                <p class="card-text" style = "text-shadow: none;">Badminton Racket, Shuttle Cock, Bicycle, etc.</p>
+                <a href="items/generalStuff" class="btn btn-primary">Go</a>
+              </div>
+            </div>   
+  
+          </div>
+
+        </div>
+
+
+        <footer class="mt-auto text-white-50">
+            <p>&copy; 2022 </p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

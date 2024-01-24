@@ -1,0 +1,97 @@
+<%- layout('layouts/Boilerplate') %>
+   <link rel="stylesheet" href="/stylesheets/medicine.css">  
+<h2 class="text-light">Login</h2>
+<form action="/login" method="POST" class="validated-form " novalidate>
+   
+  <div class="mb-3">
+        <label class="form-label text-light" for="username">Username</label>
+        <input class="form-control" type="text"  id="username" name="username" required>
+        <div class="valid-feedback">
+         Looks good!
+       </div>
+
+       
+       <div class="mb-3">
+        <label class=" form-label text-light" for="password">Password</label>
+        <input class="form-control" type="password"  id="password" name="password" required>
+        <div class="valid-feedback">
+         Looks good!
+       </div>
+   <button class="btn btn-success mt-3">Login</button>
+</form> 
+ 
+
+ 
+
+
+
+  <!-- <style>
+    body {
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("https://t3.ftcdn.net/jpg/03/79/57/92/240_F_379579202_Zd1PRVRMBtz7hhq5TBWjeOkArjHRxZOM.jpg");
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+  <form action="/login" method="POST" class="validated-form" novalidate>
+    
+
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+
+        <div class="col-md-8 col-lg-6 col-xl-5 offset-xl-1 my-lg-5 py-lg-5">
+
+
+          <div class="fullpage" style="margin:auto;">
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <h2 class="lead fw-normal mb-0 me-3" style="font-size: 40px ; color:white;">
+                Sign in
+              </h2>
+            </div>
+
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0"></p>
+            </div>
+
+           
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3"
+                style="margin-left: 0px; font-size: 25px; color:white;">Email address</label>
+              <input type="email" id="form3Example3" class="form-control form-control-lg"
+                name="email" placeholder="Enter your college email address" />
+
+              <div class="mb-3" style="padding-top: 30px" ;>
+                <label class="form-label" for="password" style="font-size: 25px;color:white;">Password</label>
+                <input class="form-control" type="password" id="password" name="password" required />
+                <div class="valid-feedback" style="color:white;">Looks good!</div>
+
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 88.8px"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+
+              
+              <div class="form-check mb-0">
+                <button class="btn btn-success mt-3" style="color:white;">Login</button>
+              </div>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2" style="margin-left: 1500px ;">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem; color:white;">
+                Login
+              </button>
+             
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </form>  -->
